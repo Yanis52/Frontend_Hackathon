@@ -34,7 +34,7 @@ export function Component() {
       setLoading(true);
 
       try {
-        const response = await axios.get(`http://https://backend-hackathon-test2.vercel.app/athlete?page=${pagination.current}&pageSize=${pagination.pageSize}`);
+        const response = await axios.get(`https://backend-hackathon-test2.vercel.app/athlete?page=${pagination.current}&pageSize=${pagination.pageSize}`);
         console.log(response.data)
         setData(response.data.result);
         setPagination(prev => ({ ...prev, total: response.data.pagination.totalItems }));

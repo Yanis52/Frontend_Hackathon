@@ -58,7 +58,7 @@ const MedalPredictionForm: React.FC = () => {
         console.log("Form submitted with data:", formData); // Log form data
 
         try {
-            const response = await fetch('http://https://backend-hackathon-test2.vercel.app/predict_medals', {
+            const response = await fetch('https://backend-hackathon-test2.vercel.app/predict_medals', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

@@ -132,7 +132,7 @@ export function Component() {
     useEffect(() => {
         if (selectedCountry) {
             const fetchData = async () => {
-                const response = await fetch(`http://https://backend-hackathon-test2.vercel.app/country_details?country=${selectedCountry}`);
+                const response = await fetch(`https://backend-hackathon-test2.vercel.app/country_details?country=${selectedCountry}`);
                 const data = await response.json();
                 console.log(data);
                 setData(data);
